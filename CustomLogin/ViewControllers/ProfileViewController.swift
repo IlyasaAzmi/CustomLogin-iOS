@@ -12,19 +12,20 @@ import FirebaseAuth
 
 class ProfileViewController: UIViewController {
     
-    
+    var textLabel = UILabel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = .blue
         
-        let signOut = UIButton(frame: CGRect(x: 50, y: 50, width: 100, height: 30))
-        signOut.backgroundColor = .red
+        let signOut = UIButton(frame: CGRect(x: 50, y: 50, width: 150, height: 50))
+        signOut.backgroundColor = .black
         signOut.setTitle("Sign Out", for: .normal)
         signOut.center = view.center
         signOut.center.y = view.center.y + 100
         signOut.addTarget(self, action: #selector(self.signOut(_:)), for: .touchUpInside)
+        signOut.layer.cornerRadius = signOut.frame.height / 2
         self.view.addSubview(signOut)
 
         // Do any additional setup after loading the view.
@@ -43,32 +44,11 @@ class ProfileViewController: UIViewController {
             return
         }
         
-        if(GIDSignIn.sharedInstance()?.currentUser != nil)
-        {
-            //logged in
-            self.view.backgroundColor = .red
-            print(GIDSignIn.sharedInstance()?.currentUser ?? "yes")
-        }
-        else
-        {
-            //not  logged in
-            self.view.backgroundColor = .yellow
-            print(GIDSignIn.sharedInstance()?.currentUser ?? "not yet")
-        }
-        
         print("Signed Out")
-        let newViewController = GoogleLoginViewController()
-        self.navigationController?.pushViewController(newViewController, animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
-    */
-
 }

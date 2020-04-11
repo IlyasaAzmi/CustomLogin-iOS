@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="WhK-hk-Abl">
-                                <rect key="frame" x="40" y="632" width="334" height="190"/>
+                                <rect key="frame" x="40" y="492" width="334" height="330"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ft-6P-GOX">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -48,7 +48,22 @@
                                             <segue destination="TAt-Lf-6bc" kind="show" id="g7f-G5-ohm"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NDs-sL-pw2">
+                                        <rect key="frame" x="0.0" y="210" width="334" height="50"/>
+                                        <state key="normal" title="Apple"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0i-hA-afe">
+                                        <rect key="frame" x="0.0" y="280" width="334" height="50"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                        <state key="normal" title="Facebook"/>
+                                    </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="NDs-sL-pw2" firstAttribute="height" secondItem="8ft-6P-GOX" secondAttribute="height" id="FiJ-7C-Cag"/>
+                                    <constraint firstItem="ufD-Gp-RRv" firstAttribute="height" secondItem="8ft-6P-GOX" secondAttribute="height" id="I9Z-o6-SxA"/>
+                                    <constraint firstItem="Xj3-Yq-wR5" firstAttribute="height" secondItem="8ft-6P-GOX" secondAttribute="height" id="VQD-lJ-3V9"/>
+                                    <constraint firstItem="A0i-hA-afe" firstAttribute="height" secondItem="8ft-6P-GOX" secondAttribute="height" id="vr3-ts-htD"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -61,6 +76,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="ZFn-P7-mQI"/>
                     <connections>
+                        <outlet property="appleSignIn" destination="NDs-sL-pw2" id="4Xd-Ou-hym"/>
+                        <outlet property="facebookSignIn" destination="A0i-hA-afe" id="Qiu-t1-54b"/>
                         <outlet property="googleSignIn" destination="Xj3-Yq-wR5" id="sgo-b1-L5b"/>
                         <outlet property="loginButton" destination="ufD-Gp-RRv" id="cLB-iu-uT9"/>
                         <outlet property="signUpButton" destination="8ft-6P-GOX" id="Oiw-BW-LJ0"/>
