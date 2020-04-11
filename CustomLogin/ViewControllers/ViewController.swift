@@ -16,6 +16,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var googleSignIn: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +33,7 @@ class ViewController: UIViewController {
     func setupElements() {
         Utilities.styleFilledButton(signUpButton)
         Utilities.styleHollowButton(loginButton)
+        Utilities.styleGoogleFilledButton(googleSignIn)
     }
 
     func setupVideo() {

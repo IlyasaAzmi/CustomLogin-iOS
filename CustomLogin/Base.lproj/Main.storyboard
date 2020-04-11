@@ -43,7 +43,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Oqq-bf-LRz"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Google"/>
                                         <connections>
                                             <segue destination="TAt-Lf-6bc" kind="show" id="g7f-G5-ohm"/>
                                         </connections>
@@ -61,6 +61,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ZFn-P7-mQI"/>
                     <connections>
+                        <outlet property="googleSignIn" destination="Xj3-Yq-wR5" id="sgo-b1-L5b"/>
                         <outlet property="loginButton" destination="ufD-Gp-RRv" id="cLB-iu-uT9"/>
                         <outlet property="signUpButton" destination="8ft-6P-GOX" id="Oiw-BW-LJ0"/>
                     </connections>

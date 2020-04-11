@@ -15,8 +15,10 @@ class GoogleLoginViewController: UIViewController, GIDSignInDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
+//        GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
+        
+//        GIDSignIn.sharedInstance()?.restorePreviousSignIn()
         
         
         GIDSignIn.sharedInstance()?.presentingViewController = self
