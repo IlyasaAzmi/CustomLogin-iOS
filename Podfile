@@ -9,6 +9,7 @@ target 'CustomLogin' do
   pod 'Firebase/Firestore'
   # Optionally, include the Swift extensions if you're using Swift.
   pod 'FirebaseFirestoreSwift'
+  pod 'GoogleSignIn'
 
   # Pods for CustomLogin
 

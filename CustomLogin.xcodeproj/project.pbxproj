@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C4FBF88DDCD7792E8AAC6B65 /* Pods_CustomLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BDF961AA9D539D6C4EF0E21 /* Pods_CustomLogin.framework */; };
+		ED416CF52440C1F30036EE3C /* GoogleLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED416CF42440C1F30036EE3C /* GoogleLoginViewController.swift */; };
+		ED416CF72440DDD40036EE3C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED416CF62440DDD40036EE3C /* ProfileViewController.swift */; };
+		ED558058243381E300415837 /* loginbg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = ED558057243381E300415837 /* loginbg.mp4 */; };
 		EDB374012433215800B85115 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB374002433215800B85115 /* AppDelegate.swift */; };
 		EDB374032433215800B85115 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB374022433215800B85115 /* SceneDelegate.swift */; };
 		EDB374052433215800B85115 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB374042433215800B85115 /* ViewController.swift */; };
@@ -26,6 +29,9 @@
 		1BDF961AA9D539D6C4EF0E21 /* Pods_CustomLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CustomLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B1D7C4FC33D7473EB840365 /* Pods-CustomLogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomLogin.release.xcconfig"; path = "Target Support Files/Pods-CustomLogin/Pods-CustomLogin.release.xcconfig"; sourceTree = "<group>"; };
 		A8429FA8CE5C4FA2E7096140 /* Pods-CustomLogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomLogin.debug.xcconfig"; path = "Target Support Files/Pods-CustomLogin/Pods-CustomLogin.debug.xcconfig"; sourceTree = "<group>"; };
+		ED416CF42440C1F30036EE3C /* GoogleLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLoginViewController.swift; sourceTree = "<group>"; };
+		ED416CF62440DDD40036EE3C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		ED558057243381E300415837 /* loginbg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = loginbg.mp4; sourceTree = "<group>"; };
 		EDB373FD2433215800B85115 /* CustomLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB374002433215800B85115 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EDB374022433215800B85115 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +77,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		ED55805A2433820A00415837 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				ED558057243381E300415837 /* loginbg.mp4 */,
+			);
+			path = Media;
+			sourceTree = "<group>";
+		};
 		EDB373F42433215800B85115 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +108,7 @@
 			children = (
 				EDB374002433215800B85115 /* AppDelegate.swift */,
 				EDB374022433215800B85115 /* SceneDelegate.swift */,
+				ED55805A2433820A00415837 /* Media */,
 				EDB3741D24332B1200B85115 /* Helpers */,
 				EDB3741A2433223600B85115 /* ViewControllers */,
 				EDB374062433215800B85115 /* Main.storyboard */,
@@ -112,6 +127,8 @@
 				EDB374142433220100B85115 /* SignUpViewController.swift */,
 				EDB374162433220D00B85115 /* LogInViewController.swift */,
 				EDB374182433221800B85115 /* HomeViewController.swift */,
+				ED416CF42440C1F30036EE3C /* GoogleLoginViewController.swift */,
+				ED416CF62440DDD40036EE3C /* ProfileViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -137,6 +154,7 @@
 				EDB373FA2433215800B85115 /* Frameworks */,
 				EDB373FB2433215800B85115 /* Resources */,
 				31B10B4ACA5C4667CCA1CDD9 /* [CP] Embed Pods Frameworks */,
+				6D44385925CEAB686950D772 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDB3740D2433215A00B85115 /* LaunchScreen.storyboard in Resources */,
+				ED558058243381E300415837 /* loginbg.mp4 in Resources */,
 				EDB3741F2433309700B85115 /* GoogleService-Info.plist in Resources */,
 				EDB3740A2433215A00B85115 /* Assets.xcassets in Resources */,
 				EDB374082433215800B85115 /* Main.storyboard in Resources */,
@@ -234,6 +253,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomLogin/Pods-CustomLogin-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		6D44385925CEAB686950D772 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomLogin/Pods-CustomLogin-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CustomLogin/Pods-CustomLogin-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CustomLogin/Pods-CustomLogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -243,6 +279,8 @@
 			files = (
 				EDB374052433215800B85115 /* ViewController.swift in Sources */,
 				EDB374012433215800B85115 /* AppDelegate.swift in Sources */,
+				ED416CF72440DDD40036EE3C /* ProfileViewController.swift in Sources */,
+				ED416CF52440C1F30036EE3C /* GoogleLoginViewController.swift in Sources */,
 				EDB3741C24332B0200B85115 /* Utilities.swift in Sources */,
 				EDB374152433220100B85115 /* SignUpViewController.swift in Sources */,
 				EDB374172433220D00B85115 /* LogInViewController.swift in Sources */,
